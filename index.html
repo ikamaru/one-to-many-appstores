@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+</body>
+<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function (){
+        if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+            window.location.href="https://one-to-many-appstores.vercel.app/android.html";
+        }
+        else if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+            window.location.href = "https://apps.apple.com/us/app/huawei-health/id1325481372";//your app link in App Store
+        }else {//you can add other else if statements based on other device types
+        	//window.location.href = 'not_supported.html';//error link
+            //or provide a default link
+            window.location.href="https://appgallery.huawei.com/#/app/C10414141" 
+        }
+    });
+</script>
+</html>
